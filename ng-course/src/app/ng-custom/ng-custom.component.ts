@@ -9,6 +9,18 @@ export class NgCustomComponent implements OnInit {
   search = '';
   text = 'Докуметы контрагента';
   searchText = '';
+
+  currencies = [
+    {
+      value: 1268162,
+      code: 'rub'
+    },
+    {
+      value: 6787,
+      code: 'eur'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

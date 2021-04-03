@@ -1,10 +1,18 @@
 <div>
-  <h2>Директивы</h2>
+  <h2>Пайпы</h2>
   <div>
     <h3>Подсветка текста</h3>
     <div>
       <input [ngModel]='search' (ngModelChange)='searchChanged($event)' />
       <div [innerHtml]="text | highlight: searchText">Докуметы контрагента</div>
+    </div>
+  </div>
+  <div>
+    <h3>Валюта</h3>
+    <div>
+      <div *ngFor='let c of currencies' >
+        {{ c.value |  appCurrency: c.code}} 
+      </div>
     </div>
   </div>
 </div>
