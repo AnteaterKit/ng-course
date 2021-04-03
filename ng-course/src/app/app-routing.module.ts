@@ -5,8 +5,17 @@ const routes: Routes = [
   {
     path: 'api',
     loadChildren:  () => import('./ng-api/ng-api.module').then(x => x.NgApiModule),
-
+  },
+  {
+    path: 'custom',
+    loadChildren:  () => import('./ng-custom/ng-custom.module').then(x => x.NgCustomModule),
+  },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
   }
+
 ];
 
 @NgModule({
