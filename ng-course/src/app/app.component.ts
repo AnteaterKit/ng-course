@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { DataAppService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ export class AppComponent {
 
   constructor(
     private router: Router,
+    public dataAppService: DataAppService
   ) {}
 
   openApi(): void {

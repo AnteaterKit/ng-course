@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { DataAppService } from '../services/data.service';
 
 @Component({
   selector: 'app-ng-custom',
@@ -13,6 +14,8 @@ export class NgCustomComponent implements OnInit {
   dragData1 = {name: 'dragggg'};
   dragData2 = null;
 
+  lessons = 0;
+
   currencies = [
     {
       value: 1268162,
@@ -24,7 +27,7 @@ export class NgCustomComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor( public dataAppService: DataAppService) { }
 
   ngOnInit(): void {
   }
@@ -36,6 +39,10 @@ export class NgCustomComponent implements OnInit {
   onDrag($event: any): void {
     console.log(333);
     this.dragData2 = $event;
+  }
+
+  lessonChanged($event: number): void {
+    this.dataAppService.updateTotalLessons($event);
   }
 
 }
