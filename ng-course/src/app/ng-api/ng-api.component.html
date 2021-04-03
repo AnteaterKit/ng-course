@@ -1,3 +1,48 @@
-<p>
-  ng-api works!
-</p>
+<div>
+  <h2>Директивы</h2>
+  <div>
+    <h3>ngFor</h3>
+    <div *ngFor='let item of items'>
+      {{item}}
+    </div>
+  </div>
+
+  <div>
+    <h3>ngIf template</h3>
+    <button (click)='load()'> загрузить </button>
+    <div *ngIf='isLoading else loader'>
+      данные загружены
+    </div>
+  </div>
+
+  <div>
+    <h3>ngStyle</h3>
+    <div [ngStyle]="{'color': '#d14'}">
+      ngStyle
+    </div>
+  </div>
+</div>
+
+<div>
+  <h2>Пайпы</h2>
+  <div>
+    <h3>Number</h3>
+    <div>
+      {{cost | number: '1.0-2'}}
+    </div>
+  </div>
+
+  <div>
+    <h3>Date</h3>
+    <div>
+      {{date | date}}
+    </div>
+  </div>
+
+</div>
+
+<ng-template #loader >
+  <div>
+    загрузка
+  </div>
+</ng-template>

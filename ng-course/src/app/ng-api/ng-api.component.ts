@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-api.component.css']
 })
 export class NgApiComponent implements OnInit {
+  items = ['angular', 'pipe', 'directive'];
+  isLoading = false;
+
+  cost = 6282323.212;
+
+  date = new Date();
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+  }
+
+  load(): void {
+    this.isLoading = true;
   }
 
 }
