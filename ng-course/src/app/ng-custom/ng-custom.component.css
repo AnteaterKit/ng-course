@@ -1,0 +1,29 @@
+.drag-container {
+  display: flex;
+  border: 1px solid yellow;
+  background-color: wheat;
+  height: 300px;
+  width: 300px;
+}
+
+.drag1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: beige;
+}
+
+.drag2 {
+  width: 50%;
+}
+
+.fo-drag-started {
+  opacity: 0.3;
+}
+.fo-drag-enter {
+  background-color: #f1f1f1;
+  opacity: 0.6;
+  border-bottom: 4px solid #0077b5;
+  border-right: 2px solid #0077b5;
+}

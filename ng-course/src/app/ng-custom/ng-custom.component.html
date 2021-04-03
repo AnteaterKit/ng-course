@@ -15,4 +15,31 @@
       </div>
     </div>
   </div>
+
+  <h2>Директивы</h2>
+  <div>
+    <h3>Drag And Drop</h3>
+    <div>
+     <div class="drag-container">
+       <div  class="drag1">
+          drag1
+          <div  draggable="true" drag [data]='dragData1' style="cursor: pointer; width: 80px; height: 30px; padding: 16px; background-color: brown;" >
+            <div></div>
+          </div>
+       </div>
+       <div drag class="drag2" (onDataDrag)="onDrag($event)">
+        drag2
+        <div *ngIf='dragData2' style="cursor: pointer; width: 80px; height: 30px; padding: 16px; background-color: blueviolet;" >
+          <div></div>
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+  <div>
+    <h3>Resize</h3>
+    <div>
+     
+    </div>
+  </div>
 </div>
