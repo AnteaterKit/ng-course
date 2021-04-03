@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-custom.component.css']
 })
 export class NgCustomComponent implements OnInit {
-
+  search = '';
+  text = 'Докуметы контрагента';
+  searchText = '';
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+  }
+
+  searchChanged($event: any): void {
+    this.searchText = $event;
   }
 
 }

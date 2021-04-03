@@ -1,3 +1,10 @@
-<p>
-  ng-custom works!
-</p>
+<div>
+  <h2>Директивы</h2>
+  <div>
+    <h3>Подсветка текста</h3>
+    <div>
+      <input [ngModel]='search' (ngModelChange)='searchChanged($event)' />
+      <div [innerHtml]="text | highlight: searchText">Докуметы контрагента</div>
+    </div>
+  </div>
+</div>
