@@ -5,9 +5,9 @@
     </h1>
   </div>
   <div>
-    <div>
-      <button (click)='openApi()' >Angular Api</button>
-      <button (click)='openCustom()'>Custom</button>
+    <div style="display: flex;">
+      <button simpleButton (click)='openApi()' >Встроенные возможности</button>
+      <button style="margin-left: 16px;" simpleButton (click)='openCustom()'>Реализуем свои</button>
     </div>
     <router-outlet></router-outlet>
   </div>

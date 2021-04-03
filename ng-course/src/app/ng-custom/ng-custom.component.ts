@@ -3,8 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-ng-custom',
   templateUrl: './ng-custom.component.html',
-  styleUrls: ['./ng-custom.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./ng-custom.component.css']
 })
 export class NgCustomComponent implements OnInit {
   search = '';
