@@ -22,4 +22,8 @@ export class AppComponent {
   openCustom(): void {
     this.router.navigate(['custom']);
   }
+
+  openTwo(): void {
+    this.router.navigate(['two']);
+  }
 }

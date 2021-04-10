@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren:  () => import('./ng-custom/ng-custom.module').then(x => x.NgCustomModule),
   },
   {
+    path: 'two',
+    loadChildren:  () => import('./lesson-two/lesson-two.module').then(x => x.LessonTwoModule),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'
