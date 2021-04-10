@@ -1,3 +1,19 @@
 <div style="padding: 24px;">
   <checkbox [ngModel]='isChecked'></checkbox>
 </div>
+<div style="padding: 24px;">
+  <div style="margin-left: 20px;width: 300px;">
+    <card title='Title' [actions]="[action]">
+      <div>
+        Content card
+      </div>
+    </card>
+  </div>
+
+  <ng-template #action>
+    <div style="display: flex;  justify-content: space-evenly;">
+      <button simpleButton color="primary" > Сохранить </button>
+      <button simpleButton color="accent" > Удалить </button>
+    </div>
+  </ng-template>
+</div>

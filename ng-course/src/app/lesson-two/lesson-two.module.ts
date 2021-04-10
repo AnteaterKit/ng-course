@@ -4,13 +4,17 @@ import { LessonTwoComponent } from './lesson-two.component';
 import { LessonTwoRoutingModule } from './lesson-two.routing.module';
 import { CheckboxModule } from '../cdk/components/checkbox/checkbox.module';
 import { FormsModule } from '@angular/forms';
+import { CardModule } from '../cdk/components/card/card.module';
+import { ButtonModule } from '../cdk/components/button/button.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     LessonTwoRoutingModule,
-    CheckboxModule
+    CheckboxModule,
+    CardModule,
+    ButtonModule
   ],
   declarations: [LessonTwoComponent]
 })
