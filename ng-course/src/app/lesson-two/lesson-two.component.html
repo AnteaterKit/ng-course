@@ -12,8 +12,42 @@
 
   <ng-template #action>
     <div style="display: flex;  justify-content: space-evenly;">
-      <button simpleButton color="primary" > Сохранить </button>
-      <button simpleButton color="accent" > Удалить </button>
+      <button simpleButton color="primary"> Сохранить </button>
+      <button simpleButton color="accent"> Удалить </button>
     </div>
   </ng-template>
 </div>
+
+<div style="padding: 24px; width: 300px;">
+  <div class="input-wrapper">
+    <h5 style="margin: 0px;">Input префикс </h5>
+    <input-field shPrefix='$'>
+      <input sh-input />
+    </input-field>
+  </div>
+
+  <div class="input-wrapper">
+    <h5 style="margin: 0px;">Input префикс и addOn</h5>
+    <input-field shPrefix='$' [shAddonSuffix]='suffixAddOnTemplate'>
+      <input sh-input />
+    </input-field>
+  </div>
+
+  <div class="input-wrapper">
+    <h5 style="margin: 0px;">Input addOn</h5>
+    <input-field [shAddonSuffix]='suffixAddOnTemplate'>
+      <input sh-input />
+    </input-field>
+  </div>
+</div>
+
+<ng-template #suffixTemplate>
+  <div style="display: flex;
+      justify-content: center;
+      flex-direction: column;">sf</div>
+</ng-template>
+<ng-template #suffixAddOnTemplate>
+  <div style="display: flex;
+    justify-content: center;
+    flex-direction: column;">Руб.</div>
+</ng-template>
