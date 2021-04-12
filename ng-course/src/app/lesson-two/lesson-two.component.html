@@ -54,15 +54,18 @@
 
 
 <div style="padding: 24px;">
+  {{tabData | json}}
   <tab>
     <tab-item [label]='tab1'>
       <div>
         content
+        <input [(ngModel)]='tabData.tab1' />
       </div>
     </tab-item>
     <tab-item [label]='tab2'>
       <div>
         content 222
+        <input [(ngModel)]='tabData.tab2' />
       </div>
     </tab-item>
   </tab>
