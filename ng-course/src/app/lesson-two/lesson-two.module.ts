@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { CardModule } from '../cdk/components/card/card.module';
 import { ButtonModule } from '../cdk/components/button/button.module';
 import { InputModule } from '../cdk/components/input/input.module';
+import { TabModule } from '../cdk/components/tab/tab.module';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { InputModule } from '../cdk/components/input/input.module';
     CheckboxModule,
     CardModule,
     ButtonModule,
-    InputModule
+    InputModule,
+    TabModule
   ],
   declarations: [LessonTwoComponent]
 })

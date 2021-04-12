@@ -1,0 +1,17 @@
+<div class="tab-wrapper">
+  <div class="tab-header">
+    <div  class="tab-header__item" *ngFor='let tab of tabs' (click)='selected(tab)'>
+      <div>{{tab.label}}</div>
+      <div class="tab-header__item__active" *ngIf='tab.selected'>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div  class="tab-content__item" *ngFor='let tab of tabs'>
+      <div *ngIf=tab.selected>
+        <tab-content [content]='tab.content'>
+        </tab-content>
+      </div>
+    </div>
+  </div>
+</div>

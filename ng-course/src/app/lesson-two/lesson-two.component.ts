@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LessonTwoComponent implements OnInit {
   isChecked = false;
+  tab1 = 'tab1';
+  tab2 = 'tab2';
   constructor() { }
 
   ngOnInit() {

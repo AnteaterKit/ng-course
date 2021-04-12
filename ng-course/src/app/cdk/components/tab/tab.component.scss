@@ -1,0 +1,28 @@
+.tab-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-header {
+  display: flex;
+  &__item{
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    &__active {
+      position: absolute;
+      border: 1px solid;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__item:hover { 
+    background-color: antiquewhite; 
+  }
+
+}
+
+.tab-content {
+  padding: 16px;
+}
