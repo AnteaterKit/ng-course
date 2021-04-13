@@ -1,16 +1,23 @@
+<app-header>
+  Services vc NgXs vs Mobx vs Akita
+</app-header>
+<div class="navbar">
+  <div style="display: flex; flex-direction: column;">
+    <!--
+    <button class="nav-item" simpleButton (click)='openApi()' >Встроенные возможности</button>
+    <button  class="nav-item"  simpleButton (click)='openCustom()'>Реализуем свои</button>
+    <button class="nav-item"  simpleButton (click)='openCustom()'> Сервисы </button>
+    <button class="nav-item"   simpleButton (click)='openTwo()'>  Урок 2 </button>
+-->
+    <button  class="nav-item"  simpleButton (click)='openState()'>  States </button>
+  </div>
+</div>
 <div class="app">
   <div>
-    <h1>
-      course, проведено уроков {{ dataAppService.totalLessons$ | async }}
-    </h1>
+    
   </div>
   <div>
-    <div style="display: flex;">
-      <button simpleButton (click)='openApi()' >Встроенные возможности</button>
-      <button style="margin-left: 16px;" simpleButton (click)='openCustom()'>Реализуем свои</button>
-      <button style="margin-left: 16px;" simpleButton (click)='openCustom()'> Сервисы </button>
-      <button style="margin-left: 16px;" simpleButton (click)='openTwo()'>  Урок 2 </button>
-    </div>
+    
     <router-outlet></router-outlet>
   </div>
 </div>

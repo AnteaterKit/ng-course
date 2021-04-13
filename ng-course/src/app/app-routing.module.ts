@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren:  () => import('./lesson-two/lesson-two.module').then(x => x.LessonTwoModule),
   },
   {
+    path: 'state',
+    loadChildren:  () => import('./state/state.module').then(x => x.StateModule),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'

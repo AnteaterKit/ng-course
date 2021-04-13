@@ -1,0 +1,21 @@
+.fur {
+  position: relative;
+  padding: 16px;
+  border: 1px solid #8c8a8a;
+  border-radius: 8px;
+  width: 50%;
+  background-color: whitesmoke;
+  margin-top: 24px;
+}
+
+.total {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 20px;
+}

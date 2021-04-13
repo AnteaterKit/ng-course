@@ -26,4 +26,8 @@ export class AppComponent {
   openTwo(): void {
     this.router.navigate(['two']);
   }
+
+  openState(): void {
+    this.router.navigate(['state']);
+  }
 }
