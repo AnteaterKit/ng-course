@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson-two.component.css']
 })
 export class LessonTwoComponent implements OnInit {
-  isChecked = false;
+  isChecked = true;
   constructor() { }
 
   ngOnInit() {
