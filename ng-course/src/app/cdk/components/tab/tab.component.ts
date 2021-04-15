@@ -22,7 +22,6 @@ export class TabComponent implements OnInit {
   selected(tab: TabItemComponent): void {
     this.tabs.forEach(x => {
       x.setUnSelected();
-    
     });
     tab.setSelected();
   }

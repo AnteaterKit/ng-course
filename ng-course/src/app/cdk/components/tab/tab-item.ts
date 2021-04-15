@@ -9,6 +9,7 @@ import {TemplatePortal} from '@angular/cdk/portal';
 export class TabItemComponent implements OnInit, AfterViewInit {
   @Input()
   label: string | undefined;
+  @Input()
   isSelected = false;
   private contentPortal: TemplatePortal | null = null;
    @ViewChild(TemplateRef, {static: true}) implicitContent!: TemplateRef<any>;
@@ -27,7 +28,6 @@ export class TabItemComponent implements OnInit, AfterViewInit {
     this.contentPortal = new TemplatePortal(this.implicitContent, this.viewContainerRef);
   }
   ngOnInit(): void {
-   
   }
 
   setSelected(): void {
